@@ -1,0 +1,9 @@
+{
+     "name": "theme-vaedervax",
+     "devDependencies": {
+          "bower": "*",
+          "gulp": "*",
+          "gulp-less": "*",
+          "gulp-rename": "*"
+     }
+}

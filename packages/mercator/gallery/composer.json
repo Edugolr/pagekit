@@ -1,0 +1,19 @@
+{
+    "name": "mercator/gallery",
+    "module": "mercator/gallery",
+    "version": "1.0.15",
+    "type": "pagekit-extension",
+    "title": "Mercator Gallery",
+    "description": "Mercator Gallery for Pagekit is a gallery extensions based on the Blueimp library. See the README at https://github.com/helmutkaufmann/Mercator-Gallery for details.",
+    "license": "GPL 3",
+    "authors": [
+        {
+            "name": "Helmut Kaufmann",
+            "homepage": "https://www.mercator.li",
+            "email": "software@mercator.li"
+        }
+    ],
+    "extra": {
+    	"icon": "mercator.png"
+    }
+}
