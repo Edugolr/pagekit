@@ -3261,6 +3261,8 @@ select.uk-form-width-xsmall {
 .uk-article-title {
   font-size: 2.23125rem;
   line-height: 1.2;
+  text-align: center;
+  margin-top: 2.2rem;
 }
 /* Tablet landscape and bigger */
 @media (min-width: 960px) {
@@ -3771,7 +3773,7 @@ ul.uk-nav-sub {
 /* Container
  ========================================================================== */
 .uk-navbar-container:not(.uk-navbar-transparent) {
-  background: #f8f8f8;
+  background: #A43D6D;
 }
 /*
  * Remove pseudo elements created by micro clearfix as precaution (if Container component is used)
@@ -3892,7 +3894,7 @@ ul.uk-nav-sub {
  * Nav items
  */
 .uk-navbar-nav > li > a {
-  color: #999;
+  color: #fff;
   text-transform: uppercase;
   transition: 0.1s ease-in-out;
   transition-property: color, background-color;

@@ -11,19 +11,20 @@
         <?php $view->script('theme', 'theme:js/theme.js') ?>
 
     </head>
-    <body>
-    <div class="uk-grid uk-height-viewport">
+    <body class="uk-light">
 
-
+         <div class="uk-offcanvas-content">
         <!-- Render logo or title with site URL -->
 
 
-        <!-- Render menu position -->
-        <?php if ($view->menu()->exists('main')) : ?>
-            <div class="nav-wrap uk-width-1-1">
-                <?= $view->menu('main') ?>
-            </div>
-        <?php endif ?>
+        <nav class="uk-navbar uk-navbar-container">
+            <!-- Render menu position -->
+            <?php if ($view->menu()->exists('main')) : ?>
+                <div class="uk-navbar-right">
+                    <?= $view->menu('main', 'menu-navbar.php') ?>
+                </div>
+            <?php endif ?>
+        </nav>
 
         <!-- Render widget position -->
         <?php if ($view->position()->exists('sidebar')) : ?>

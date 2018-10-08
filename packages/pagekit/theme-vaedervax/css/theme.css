@@ -1,49 +1,18 @@
 /*
  * Theme CSS
  */
-
+ .backgroundHome {
+     background-color: #0b0b0b66;
+ }
+ 
+ .uk-card-default {
+     color: #ffffff;
+ }
 /*
  * Nav
  */
- /* body {
-     color: #fff;
- } */
 
-.backgroundHome {
-
-    background-color: #0b0b0b66;
-}
-.nav-wrap {
-    background-color: #A43D6D;
-    color: #fff;
-    float: right;
-}
-
-.uk-nav {
-    float: right;
-}
-
-.uk-nav > li {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.uk-nav > li > a {
-    color:#fff;
-    /* display: block; */
-    color: white;
-    /* text-align: center; */
-    padding: 14px 16px;
-    /* text-decoration: none; */
-}
-
-.uk-nav > li:hover > a,
-.uk-nav > li > a:focus,
-.uk-nav > li.uk-open > a {  text-decoration: underline; }
-
-.uk-nav > li > a:active {  text-decoration: underline; }
-
-.uk-nav > li.uk-active > a {  text-decoration: underline; }
+.uk-nav {}
 
 .uk-active {}
 
@@ -57,11 +26,7 @@
 
 .uk-article {}
 
-.uk-article-title {
-    color: #fff;
-    text-align: center;
-    margin-top: 40px;
-}
+.uk-article-title {}
 
 .uk-article-meta{}
 
@@ -77,7 +42,7 @@
 
 .uk-pagination {}
 
-.uk-pagination-previous {}
+.uk-pagination-previous {}
 
 .uk-pagination-next {}
 
@@ -147,12 +112,6 @@
 
 .uk-display-block{}
 
-.uk-card-default {
-    color: #ffffff;
-}
-/* footer */
 .footer {
     background-color: #A43D6D;
-    color: #ffff;
-    width: 100%;
 }
