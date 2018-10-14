@@ -1,0 +1,29 @@
+{
+    "name": "pastheme/dpnblog",
+    "type": "pagekit-extension",
+    "version": "1.4.8",
+    "title": "Advanced Blog (Beta)",
+    "description": "An Advanced Blog Extension with some extra features.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pastheme",
+            "email": "me@pastheme.com",
+            "homepage": "http://pastheme.com"
+        },
+
+        {
+            "name": "Pagekit",
+            "email": "info@pagekit.com",
+            "homepage": "http://pagekit.com"
+        }
+    ],
+    "extra": {
+        "icon": "icon.svg",
+        "image": "image.png",
+        "scripts": "scripts.php"
+    },
+    "archive": {
+        "exclude": ["node_modules", "!/app"]
+    }
+}

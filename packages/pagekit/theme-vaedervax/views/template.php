@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
         <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
         <?= $view->render('head') ?>
         <?php $view->style('custom-uikit', 'theme:css/uikit.css') ?>
@@ -11,13 +11,10 @@
         <?php $view->script('theme', 'theme:js/theme.js') ?>
 
     </head>
-    <body class="uk-light">
-
-         <div class="uk-offcanvas-content">
+    <body class="">
         <!-- Render logo or title with site URL -->
 
-
-        <nav class="uk-navbar uk-navbar-container">
+        <nav class="uk-navbar uk-navbar-container uk-light">
             <!-- Render menu position -->
             <?php if ($view->menu()->exists('main')) : ?>
                 <div class="uk-navbar-right">
@@ -27,16 +24,25 @@
         </nav>
 
         <!-- Render widget position -->
-        <?php if ($view->position()->exists('sidebar')) : ?>
-            <?= $view->position('sidebar') ?>
-        <?php endif; ?>
 
-        <!-- Render content -->
-        <div class="uk-width-expand">
-        <div class="uk-background-cover uk-height-viewport " style="background-image: url('/pagekitVaedervax/storage/horseBG.jpeg');">
-            <?= $view->render('content') ?>
-        </div>
-        </div>
+
+        <?php if ($view->position()->exists('hero')) : ?>
+            <div class="uk-width-expand">
+                <div class="uk-background-cover uk-height-viewport " style="background-image: url('/pagekitVaedervax/storage/horseBG.jpeg');">
+                        <section class="uk-grid uk-grid-match" data-uk-grid-margin>
+                            <?= $view->position('hero') ?>
+                            <?= $view->render('content') ?>
+                        </section>
+
+                </div>
+            </div>
+        <?php else: ?>
+            <div class="uk-width-expand">
+                <div class="uk-background-cover uk-height-viewport">
+                    <?= $view->render('content') ?>
+                </div>
+            </div>
+        <?php endif; ?>
 
         <!-- footer -->
         <?php if ($view->position()->exists('footer')) : ?>
@@ -60,6 +66,5 @@
 
         <!-- render footer -->
         <?= $view->render('footer') ?>
-        </div>
     </body>
 </html>

@@ -4,9 +4,34 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b8a904b6fedb132356510831a5a4249e",
-    "content-hash": "54c367a4d77b9079fdf476f461791b7d",
+    "hash": "21e27b2f4f9d817cee14c6a36f56133d",
+    "content-hash": "1970a16f1ecda3b2d19bbebf5aa809c4",
     "packages": [
+        {
+            "name": "bixie/blogposts",
+            "version": "1.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://pagekit.com/package/bixie/blogposts/1.0.0.zip",
+                "reference": null,
+                "shasum": "2f525ed70b8b81bd94ca47b124a60dbe25ba08d2"
+            },
+            "type": "pagekit-extension",
+            "extra": {
+                "icon": "icon.svg"
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bixie",
+                    "email": "info@bixie.org",
+                    "homepage": "http://www.bixie.org"
+                }
+            ],
+            "description": "Show the latest blog posts in a widget."
+        },
         {
             "name": "mercator/gallery",
             "version": "1.0.15",
@@ -124,6 +149,44 @@
                 }
             ],
             "description": "Pagekit's default theme."
+        },
+        {
+            "name": "pastheme/dpnblog",
+            "version": "1.4.8",
+            "dist": {
+                "type": "zip",
+                "url": "https://pagekit.com/package/pastheme/dpnblog/1.4.8.zip",
+                "reference": null,
+                "shasum": ""
+            },
+            "archive": {
+                "exclude": [
+                    "node_modules",
+                    "!/app"
+                ]
+            },
+            "type": "pagekit-extension",
+            "extra": {
+                "icon": "icon.svg",
+                "image": "image.png",
+                "scripts": "scripts.php"
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pastheme",
+                    "email": "me@pastheme.com",
+                    "homepage": "http://pastheme.com"
+                },
+                {
+                    "name": "Pagekit",
+                    "email": "info@pagekit.com",
+                    "homepage": "http://pagekit.com"
+                }
+            ],
+            "description": "An Advanced Blog Extension with some extra features."
         }
     ],
     "packages-dev": [],

@@ -27,6 +27,8 @@ return [
      * can publish widgets in these positions.
      */
     'positions' => [
+
+        'hero' => 'Hero',
         'footer' => 'Footer',
         'footerContact' => 'FooterContact',
         'footerService' => 'FooterService',
