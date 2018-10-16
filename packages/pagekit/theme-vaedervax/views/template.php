@@ -42,10 +42,10 @@
                 </div>
             </div>
         <?php endif; ?>
-        
+
         <!-- footer -->
         <?php if ($view->position()->exists('footer')) : ?>
-            <div class="footer uk-grid uk-flex">
+            <div class="footer uk-flex uk-text-break" uk-grid >
                 <div class="uk-width-1-6@s">
                     <?= $view->position('footerContact') ?>
                 </div>
