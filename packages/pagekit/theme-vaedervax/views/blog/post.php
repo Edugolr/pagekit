@@ -1,6 +1,6 @@
 <?php $view->script('post', 'blog:app/bundle/post.js', 'vue') ?>
 
-<article class="uk-article tm-container-small">
+<article class="uk-article uk-card-secondary uk-width-1-1">
 
     <?php if ($image = $post->get('image.src')): ?>
     <img src="<?= $image ?>" alt="<?= $post->get('image.alt') ?>">
@@ -8,7 +8,7 @@
 
     <h1 class="uk-article-title"><?= $post->title ?></h1>
 
-    <p class="uk-article-meta">
+    <p class="uk-article-meta ">
         <?= __('Written by %name% on %date%', ['%name%' => $post->user->name, '%date%' => '<time datetime="'.$post->date->format(\DateTime::W3C).'" v-cloak>{{ "'.$post->date->format(\DateTime::W3C).'" | date "longDate" }}</time>' ]) ?>
     </p>
 
