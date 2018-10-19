@@ -3,11 +3,10 @@
  */
  .backgroundHome {
      background-color: #0b0b0b66;
+     color: #dee9f3;
  }
 
- .uk-card-default {
-     color: #ffffff;
- }
+
 /*
  * Nav
  */

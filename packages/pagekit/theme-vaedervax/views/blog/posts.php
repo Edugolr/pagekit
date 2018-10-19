@@ -1,23 +1,23 @@
 <?php $view->script('posts', 'blog:app/bundle/posts.js', 'vue') ?>
 
-<div class="tm-container-small ">
+<div class="uk-flex-center uk-text-center"uk-grid >
 
     <?php foreach ($posts as $post) : ?>
-    <article class="uk-article uk-card-secondary ">
+    <article class="uk-card uk-card-default uk-card-body uk-width-1-3@s">
 
         <?php if ($image = $post->get('image.src')): ?>
         <a class="uk-display-block" href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>"><img src="<?= $image ?>" alt="<?= $post->get('image.alt') ?>"></a>
         <?php endif ?>
 
-        <h1 class="uk-article-title"><a href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>"><?= $post->title ?></a></h1>
+        <h1 class=".uk-text-lead uk-link-heading"><a href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>"><?= $post->title ?></a></h1>
 
-        <p class="uk-article-meta">
+        <p class="uk-text-meta">
             <?= __('Written by %name% on %date%', ['%name%' => $post->user->name, '%date%' => '<time datetime="'.$post->date->format(\DateTime::W3C).'" v-cloak>{{ "'.$post->date->format(\DateTime::W3C).'" | date "longDate" }}</time>' ]) ?>
         </p>
 
         <div class="uk-margin"><?= $post->excerpt ?: $post->content ?></div>
 
-        <div class="uk-margin-large-top">
+        <div class="uk-margin-medium-left uk-margin-large-top">
             <ul class="uk-subnav uk-margin-bottom-remove">
 
                 <?php if (isset($post->readmore) && $post->readmore || $post->excerpt) : ?>

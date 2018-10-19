@@ -36,8 +36,8 @@
             </div>
 
         <?php else: ?>
-            <div class="uk-width-expand uk-flex">
-                <div class="uk-width-1-1 uk-height-viewport">
+            <div class="uk-width-expand">
+                <div class="uk-height-viewport">
                     <?= $view->render('content') ?>
                 </div>
             </div>
@@ -45,8 +45,8 @@
 
         <!-- footer -->
         <?php if ($view->position()->exists('footer')) : ?>
-            <div class="footer uk-flex uk-text-break" uk-grid >
-                <div class="uk-width-1-6@s">
+            <div class="footer uk-flex uk-text-break uk-light uk-text-small" uk-grid >
+                <div class="uk-width-1-6@s ">
                     <?= $view->position('footerContact') ?>
                 </div>
                 <div class="uk-width-1-6@s">
