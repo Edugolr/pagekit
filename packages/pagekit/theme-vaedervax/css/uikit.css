@@ -10,7 +10,7 @@
  */
 html {
   /* 1 */
-  font-family: Arial;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.5;
@@ -241,7 +241,7 @@ h5,
 h6,
 .uk-h6 {
   margin: 0 0 20px 0;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Roboto Slab","HelveticaNeue","Helvetica Neue",sans-serif;
   font-weight: normal;
   color: #333;
   text-transform: none;
@@ -406,7 +406,7 @@ pre {
   background: #fff;
 }
 pre code {
-  font-family: Arial;
+  font-family: 'Poppins', sans-serif;
 }
 /* Selection pseudo-element
  ========================================================================== */
@@ -3886,7 +3886,7 @@ ul.uk-nav-sub {
   padding: 0 15px;
   /* 3 */
   font-size: 0.875rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   /* 4 */
   text-decoration: none;
 }
@@ -7856,7 +7856,7 @@ iframe.uk-cover {
  */
 .uk-logo {
   font-size: 1.5rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #666;
   /* 1 */
   text-decoration: none;

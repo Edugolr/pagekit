@@ -1,7 +1,7 @@
 <?php $view->script('post', 'blog:app/bundle/post.js', 'vue') ?>
 
-<div class=" uk-flex-center uk-text-center"uk-grid >
-<article class="uk-card uk-card-default uk-card-body uk-width-5-6">
+<div class=" uk-flex-center uk-text-center">
+<article class="uk-margin-auto uk-card uk-card-default uk-card body uk-width-5-6">
 
     <?php if ($image = $post->get('image.src')): ?>
     <img src="<?= $image ?>" alt="<?= $post->get('image.alt') ?>">
